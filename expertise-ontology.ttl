@@ -1,4 +1,4 @@
-@prefix eo: <http://stko-kwg.geog.ucsb.edu/lod/ontology/expertise-ontology/> .
+@prefix : <http://knowwheregraph/ontology/expertise-ontology/> .
 @prefix eo: <http://stko-kwg.geog.ucsb.edu/lod/ontology/expertise-ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,8 +7,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix schema: <http://schema.org/> .
+@base <http://knowwheregraph/ontology/expertise-ontology/> .
 
-<http://stko-kwg.geog.ucsb.edu/lod/ontology/expertise-ontology/> rdf:type owl:Ontology .
+<http://knowwheregraph/ontology/expertise-ontology/> rdf:type owl:Ontology .
 
 #################################################################
 #    Annotation properties
@@ -74,123 +75,123 @@ schema:rangeIncludes rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#activePeriod
-<http://www.semanticweb.org/owl/owlapi/turtle#activePeriod> rdf:type owl:ObjectProperty ;
-                                                            rdfs:label "active period" .
+###  http://knowwheregraph/ontology/expertise-ontology/activePeriod
+:activePeriod rdf:type owl:ObjectProperty ;
+              rdfs:label "active period" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#affiliationAs
-<http://www.semanticweb.org/owl/owlapi/turtle#affiliationAs> rdf:type owl:ObjectProperty ;
-                                                             rdfs:label "affiliation as" .
+###  http://knowwheregraph/ontology/expertise-ontology/affiliationAs
+:affiliationAs rdf:type owl:ObjectProperty ;
+               rdfs:label "affiliation as" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#affiliationLocation
-<http://www.semanticweb.org/owl/owlapi/turtle#affiliationLocation> rdf:type owl:ObjectProperty ;
-                                                                   rdfs:label "affiliation location" .
+###  http://knowwheregraph/ontology/expertise-ontology/affiliationLocation
+:affiliationLocation rdf:type owl:ObjectProperty ;
+                     rdfs:label "affiliation location" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#affiliationWith
-<http://www.semanticweb.org/owl/owlapi/turtle#affiliationWith> rdf:type owl:ObjectProperty ;
-                                                               rdfs:label "affiliation with" .
+###  http://knowwheregraph/ontology/expertise-ontology/affiliationWith
+:affiliationWith rdf:type owl:ObjectProperty ;
+                 rdfs:label "affiliation with" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#fallsUnderTopic
-<http://www.semanticweb.org/owl/owlapi/turtle#fallsUnderTopic> rdf:type owl:ObjectProperty ;
-                                                               rdfs:label "falls under topic" .
+###  http://knowwheregraph/ontology/expertise-ontology/fallsUnderTopic
+:fallsUnderTopic rdf:type owl:ObjectProperty ;
+                 rdfs:label "falls under topic" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#hasActivityRelation
-<http://www.semanticweb.org/owl/owlapi/turtle#hasActivityRelation> rdf:type owl:ObjectProperty ;
-                                                                   rdfs:label "has activity relation" .
+###  http://knowwheregraph/ontology/expertise-ontology/hasActivityRelation
+:hasActivityRelation rdf:type owl:ObjectProperty ;
+                     rdfs:label "has activity relation" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#hasConnectDescription
-<http://www.semanticweb.org/owl/owlapi/turtle#hasConnectDescription> rdf:type owl:ObjectProperty ;
-                                                                     rdfs:label "has connect description" .
+###  http://knowwheregraph/ontology/expertise-ontology/hasConnectDescription
+:hasConnectDescription rdf:type owl:ObjectProperty ;
+                       rdfs:label "has connect description" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#hasExpertise
-<http://www.semanticweb.org/owl/owlapi/turtle#hasExpertise> rdf:type owl:ObjectProperty ;
-                                                            rdfs:label "has expertise" .
+###  http://knowwheregraph/ontology/expertise-ontology/hasExpertise
+:hasExpertise rdf:type owl:ObjectProperty ;
+              rdfs:label "has expertise" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#hasExpertiseRelation
-<http://www.semanticweb.org/owl/owlapi/turtle#hasExpertiseRelation> rdf:type owl:ObjectProperty ;
-                                                                    rdfs:label "has expertise relation" .
+###  http://knowwheregraph/ontology/expertise-ontology/hasExpertiseRelation
+:hasExpertiseRelation rdf:type owl:ObjectProperty ;
+                      rdfs:label "has expertise relation" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#hasGeographicLocation
-<http://www.semanticweb.org/owl/owlapi/turtle#hasGeographicLocation> rdf:type owl:ObjectProperty ;
-                                                                     rdfs:label "has geographic location" .
+###  http://knowwheregraph/ontology/expertise-ontology/hasGeographicLocation
+:hasGeographicLocation rdf:type owl:ObjectProperty ;
+                       rdfs:label "has geographic location" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#hasRelatedTopic
-<http://www.semanticweb.org/owl/owlapi/turtle#hasRelatedTopic> rdf:type owl:ObjectProperty ;
-                                                               rdfs:label "has related topic" .
+###  http://knowwheregraph/ontology/expertise-ontology/hasRelatedTopic
+:hasRelatedTopic rdf:type owl:ObjectProperty ;
+                 rdfs:label "has related topic" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#hasSpatialAffiliation
-<http://www.semanticweb.org/owl/owlapi/turtle#hasSpatialAffiliation> rdf:type owl:ObjectProperty ;
-                                                                     rdfs:label "has spatial affiliation" .
+###  http://knowwheregraph/ontology/expertise-ontology/hasSpatialAffiliation
+:hasSpatialAffiliation rdf:type owl:ObjectProperty ;
+                       rdfs:label "has spatial affiliation" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#hasSpatialAssociation
-<http://www.semanticweb.org/owl/owlapi/turtle#hasSpatialAssociation> rdf:type owl:ObjectProperty ;
-                                                                     rdfs:label "has spatial association" .
+###  http://knowwheregraph/ontology/expertise-ontology/hasSpatialAssociation
+:hasSpatialAssociation rdf:type owl:ObjectProperty ;
+                       rdfs:label "has spatial association" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#hasStudyAreaOfInterest
-<http://www.semanticweb.org/owl/owlapi/turtle#hasStudyAreaOfInterest> rdf:type owl:ObjectProperty ;
-                                                                      rdfs:label "has study area of interest" .
+###  http://knowwheregraph/ontology/expertise-ontology/hasStudyAreaOfInterest
+:hasStudyAreaOfInterest rdf:type owl:ObjectProperty ;
+                        rdfs:label "has study area of interest" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#hasSubTopic
-<http://www.semanticweb.org/owl/owlapi/turtle#hasSubTopic> rdf:type owl:ObjectProperty ;
-                                                           rdfs:label "has sub-topic" .
+###  http://knowwheregraph/ontology/expertise-ontology/hasSubTopic
+:hasSubTopic rdf:type owl:ObjectProperty ;
+             rdfs:label "has sub-topic" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#isSubTopicOf
-<http://www.semanticweb.org/owl/owlapi/turtle#isSubTopicOf> rdf:type owl:ObjectProperty ;
-                                                            rdfs:label "is sub-topic of" .
+###  http://knowwheregraph/ontology/expertise-ontology/isSubTopicOf
+:isSubTopicOf rdf:type owl:ObjectProperty ;
+              rdfs:label "is sub-topic of" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#locatedIn
-<http://www.semanticweb.org/owl/owlapi/turtle#locatedIn> rdf:type owl:ObjectProperty ;
-                                                         rdfs:label "located in" .
+###  http://knowwheregraph/ontology/expertise-ontology/locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:label "located in" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#particularToTemporalPeriod
-<http://www.semanticweb.org/owl/owlapi/turtle#particularToTemporalPeriod> rdf:type owl:ObjectProperty ;
-                                                                          rdfs:label "particular to temporal period" .
+###  http://knowwheregraph/ontology/expertise-ontology/particularToTemporalPeriod
+:particularToTemporalPeriod rdf:type owl:ObjectProperty ;
+                            rdfs:label "particular to temporal period" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#qualitativeExpertiseLevel
-<http://www.semanticweb.org/owl/owlapi/turtle#qualitativeExpertiseLevel> rdf:type owl:ObjectProperty ;
-                                                                         rdfs:label "qualitative expertise level" .
+###  http://knowwheregraph/ontology/expertise-ontology/qualitativeExpertiseLevel
+:qualitativeExpertiseLevel rdf:type owl:ObjectProperty ;
+                           rdfs:label "qualitative expertise level" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#relatedToActivity
-<http://www.semanticweb.org/owl/owlapi/turtle#relatedToActivity> rdf:type owl:ObjectProperty ;
-                                                                 rdfs:label "related to activity" .
+###  http://knowwheregraph/ontology/expertise-ontology/relatedToActivity
+:relatedToActivity rdf:type owl:ObjectProperty ;
+                   rdfs:label "related to activity" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#relatedToTopic
-<http://www.semanticweb.org/owl/owlapi/turtle#relatedToTopic> rdf:type owl:ObjectProperty ;
-                                                              rdfs:label "related to topic" .
+###  http://knowwheregraph/ontology/expertise-ontology/relatedToTopic
+:relatedToTopic rdf:type owl:ObjectProperty ;
+                rdfs:label "related to topic" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#specialization
-<http://www.semanticweb.org/owl/owlapi/turtle#specialization> rdf:type owl:ObjectProperty ;
-                                                              rdfs:label "specialization" .
+###  http://knowwheregraph/ontology/expertise-ontology/specialization
+:specialization rdf:type owl:ObjectProperty ;
+                rdfs:label "specialization" .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#quantitativeExpertiseLevel
-<http://www.semanticweb.org/owl/owlapi/turtle#quantitativeExpertiseLevel> rdf:type owl:DatatypeProperty ;
-                                                                          rdfs:comment "quantitative expertise level" .
+###  http://knowwheregraph/ontology/expertise-ontology/quantitativeExpertiseLevel
+:quantitativeExpertiseLevel rdf:type owl:DatatypeProperty ;
+                            rdfs:comment "quantitative expertise level" .
 
 
 #################################################################
@@ -202,59 +203,65 @@ schema:rangeIncludes rdf:type owl:AnnotationProperty .
                                                   rdfs:label "Affiliation" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#Activity
-<http://www.semanticweb.org/owl/owlapi/turtle#Activity> rdf:type owl:Class ;
-                                                        rdfs:label "Activity" .
+###  http://knowwheregraph/ontology/expertise-ontology/Activity
+:Activity rdf:type owl:Class ;
+          rdfs:comment "While we do no re-use concepts from standard/upper ontologies, mappings can be created between eo:Activity with similar concepts (e.g., dul:Activity) from external ontologies if needed." ;
+          rdfs:label "Activity" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#Agent
-<http://www.semanticweb.org/owl/owlapi/turtle#Agent> rdf:type owl:Class ;
-                                                     rdfs:label "Agent" .
+###  http://knowwheregraph/ontology/expertise-ontology/Agent
+:Agent rdf:type owl:Class ;
+       rdfs:label "Agent" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#AgentActivityRelation
-<http://www.semanticweb.org/owl/owlapi/turtle#AgentActivityRelation> rdf:type owl:Class ;
-                                                                     rdfs:label "Agent Activity Relation" .
+###  http://knowwheregraph/ontology/expertise-ontology/AgentActivityRelation
+:AgentActivityRelation rdf:type owl:Class ;
+                       rdfs:label "Agent Activity Relation" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#AgentExpertiseRelation
-<http://www.semanticweb.org/owl/owlapi/turtle#AgentExpertiseRelation> rdf:type owl:Class ;
-                                                                      rdfs:label "Agent Expertise Relation" .
+###  http://knowwheregraph/ontology/expertise-ontology/AgentExpertiseRelation
+:AgentExpertiseRelation rdf:type owl:Class ;
+                        rdfs:label "Agent Expertise Relation" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#EntityWithProvenance
-<http://www.semanticweb.org/owl/owlapi/turtle#EntityWithProvenance> rdf:type owl:Class ;
-                                                                    rdfs:label "Entity With Provenance" .
+###  http://knowwheregraph/ontology/expertise-ontology/EntityWithProvenance
+:EntityWithProvenance rdf:type owl:Class ;
+                      rdfs:label "Entity With Provenance" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#EntityWithTemporalScope
-<http://www.semanticweb.org/owl/owlapi/turtle#EntityWithTemporalScope> rdf:type owl:Class ;
-                                                                       rdfs:label "Entity With Temporal Scope" .
+###  http://knowwheregraph/ontology/expertise-ontology/EntityWithTemporalScope
+:EntityWithTemporalScope rdf:type owl:Class ;
+                         rdfs:label "Entity With Temporal Scope" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#ExpertiseLevel
-<http://www.semanticweb.org/owl/owlapi/turtle#ExpertiseLevel> rdf:type owl:Class ;
-                                                              rdfs:label "Expertise Level" .
+###  http://knowwheregraph/ontology/expertise-ontology/ExpertiseLevel
+:ExpertiseLevel rdf:type owl:Class ;
+                rdfs:label "Expertise Level" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#Organization
-<http://www.semanticweb.org/owl/owlapi/turtle#Organization> rdf:type owl:Class ;
-                                                            rdfs:label "Organization" .
+###  http://knowwheregraph/ontology/expertise-ontology/Organization
+:Organization rdf:type owl:Class ;
+              rdfs:label "Organization" .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#Speciality
-<http://www.semanticweb.org/owl/owlapi/turtle#Speciality> rdf:type owl:Class ;
-                                                          rdfs:label "Speciality" .
+###  http://knowwheregraph/ontology/expertise-ontology/Speciality
+:Speciality rdf:type owl:Class ;
+            rdfs:comment "Specialities from external standard ontologies can be adopted for use here. For example, \"Obstetrics\" is a speciality described in the MeSH ontology (http://id.nlm.nih.gov/mesh/D009774)." ;
+            rdfs:label "Speciality" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "The specific area of interest or topic that an organization specializes in. Hospitals may, for example, specialize as orthopedic centers, surgical centers, or cardiac facilities." .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#Topic
-<http://www.semanticweb.org/owl/owlapi/turtle#Topic> rdf:type owl:Class ;
-                                                     rdfs:label "Topic" .
+###  http://knowwheregraph/ontology/expertise-ontology/Topic
+:Topic rdf:type owl:Class ;
+       rdfs:comment "Topic hierarchies for a domain can be constructed from existing standard taxonomies (e.g., UNDRR HIP classification for hazards) or even domain ontologies (e.g., the Disease Ontology). Patterns such as the Scientific Taxonomy Pattern (https://github.com/shirlysteph/scientific-taxonomy-pattern) alongside vocabularies like SKOS and PROV to construct the hierarchy by describing appropriate relations between individual topics." ;
+       rdfs:label "Topic" ;
+       <http://www.w3.org/2004/02/skos/core#definition> "This class refers to themes or subject areas. Topics can range in scope from broad areas of knowledge like Science and Nanoscience to fine-grained areas of knowledge like the Impact of Hurricane Ida in Louisiana." ;
+       <http://www.w3.org/2004/02/skos/core#note> "Topic class is distinct from the concept that it refers to in a domain ontology, e.g., Disease as an instance of the Topic class vs. the Disease class from DO, but a mapping can exist between the two. Concepts differ from topics in that they represent specific instances, they may have properties describing their various features and attributes, and they can have subclasses that represent concepts that are more specific than the superclass. Topics represent an area of discourse, useful for annotating distributed content (instances and even classes) in a KG for search and summarization purposes." .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#TopicConnectednessDescription
-<http://www.semanticweb.org/owl/owlapi/turtle#TopicConnectednessDescription> rdf:type owl:Class ;
-                                                                             rdfs:label "Topic Connectedness Description" .
+###  http://knowwheregraph/ontology/expertise-ontology/TopicConnectednessDescription
+:TopicConnectednessDescription rdf:type owl:Class ;
+                               rdfs:label "Topic Connectedness Description" .
 
 
 ###  http://www.w3.org/2006/time#TemporalEntity
