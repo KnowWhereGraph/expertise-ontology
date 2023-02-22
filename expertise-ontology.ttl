@@ -185,6 +185,19 @@ schema:rangeIncludes rdf:type owl:AnnotationProperty .
                 rdfs:label "specialization" .
 
 
+###  http://www.w3.org/ns/org#hasMember
+<http://www.w3.org/ns/org#hasMember> rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf <http://www.w3.org/ns/org#memberOf> ;
+                                     rdfs:label "has member" ;
+                                     <http://www.w3.org/2004/02/skos/core#definition> "Indicates an agent (person or other organization) who is a member of the subject Organization. Inverse of org:memberOf, see that property for further clarification." .
+
+
+###  http://www.w3.org/ns/org#memberOf
+<http://www.w3.org/ns/org#memberOf> rdf:type owl:ObjectProperty ;
+                                    rdfs:label "member of" ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "Indicates that an agent (person or other organization) is a member of the Organization with no indication of the nature of that membership or the role played." .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -201,7 +214,7 @@ schema:rangeIncludes rdf:type owl:AnnotationProperty .
 ###  http://knowwheregraph/ontology/dmdo/Affiliation
 <http://knowwheregraph/ontology/dmdo/Affiliation> rdf:type owl:Class ;
                                                   rdfs:label "Affiliation" ;
-                                                  <http://www.w3.org/2004/02/skos/core#definition> "This is a reified concept to denote the relationship between an agent with an organization based on their job role, for example, a public health professional’s affiliation as a program director or a trauma surgeon within a hospital." .
+                                                  <http://www.w3.org/2004/02/skos/core#definition> "This is a reification of the org:memberOf relation to denote the relationship between an agent with an organization based on their job role, for example, a public health professional’s affiliation as a program director or a trauma surgeon within a hospital." .
 
 
 ###  http://knowwheregraph/ontology/expertise-ontology/Activity
