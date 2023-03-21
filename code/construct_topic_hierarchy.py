@@ -29,7 +29,8 @@ _PREFIX = {
     "sosa": Namespace("http://www.w3.org/ns/sosa/"),
     "skos": Namespace("http://www.w3.org/2004/02/skos/core#"),
     "doid": Namespace("http://purl.obolibrary.org/obo/doid#"),
-    "prov": Namespace("http://www.w3.org/ns/prov#")
+    "prov": Namespace("http://www.w3.org/ns/prov#"),
+    "eo": Namespace("http://knowwheregraph/ontology/expertise-ontology/")
 }
 
 
@@ -102,6 +103,8 @@ def construct_topic_hierarchy():
 
   #kwgrGraph = rdflib.Graph()
   kwgrGraph = Initial_KG(_PREFIX)
+  doid_namespace = URIRef("http://purl.obolibrary.org/obo/doid#")
+
 
   for subj_iri, obj_iri in g.subject_objects(predicate=RDFS.subClassOf):
     ###############include function for general set of predicates#####
@@ -127,24 +130,27 @@ def construct_topic_hierarchy():
     
         if subj_disease_topic_iri is not None:
             #####################adding to the graph##################
-            kwgrGraph.add( (subj_disease_topic_iri, RDF.type, _PREFIX["kwg-ont"]["Topic"]) )
+            kwgrGraph.add( (subj_disease_topic_iri, RDF.type, _PREFIX["eo"]["Topic"]) )
             kwgrGraph.add( (subj_disease_topic_iri, RDFS.label, Literal(str(subj_label) + " topic")) )
 
-            kwgrGraph.add( (obj_disease_topic_iri, RDF.type, _PREFIX["kwg-ont"]["Topic"]) )
+            kwgrGraph.add( (obj_disease_topic_iri, RDF.type, _PREFIX["eo"]["Topic"]) )
             kwgrGraph.add( (obj_disease_topic_iri, RDFS.label, Literal(str(obj_label)+ " topic")) )
 
-            kwgrGraph.add( (subj_disease_topic_iri, _PREFIX["kwg-ont"]["isSubTopicOf"], obj_disease_topic_iri) )
+            kwgrGraph.add( (subj_disease_topic_iri, _PREFIX["eo"]["isSubTopicOf"], obj_disease_topic_iri) )
             #kwgrGraph.add( (obj_disease_topic_iri, _PREFIX["kwg-ont"]["hasRelatedTopic"], uberon_topic_iri) )
 
             #####################create topic-connectedness relation##################
             topic_connectedness_iri = MakeConnectIRI('topicConnect', subj, obj)
             connect_description = str(obj_label)+ " is a sub-topic of "+str(subj_label) ## this will be updated if relations other than subclass are materialized
-            kwgrGraph.add( (topic_connectedness_iri, RDF.type, _PREFIX["kwg-ont"]["TopicConnectednessRelation"]) )
+            kwgrGraph.add( (topic_connectedness_iri, RDF.type, _PREFIX["eo"]["TopicConnectednessRelation"]) )
             kwgrGraph.add( (topic_connectedness_iri, RDFS.label, Literal("Entity describing the relation between "+str(subj_disease_topic_iri)+" and "+ str(obj_disease_topic_iri))) )
             kwgrGraph.add( (topic_connectedness_iri, _PREFIX["skos"]["description"], Literal(connect_description)) )
-            kwgrGraph.add( (topic_connectedness_iri, _PREFIX["prov"]["hadPrimarySource"], _PREFIX["doid"][obj_iri]) )
-            kwgrGraph.add( (subj_disease_topic_iri, _PREFIX["kwg-ont"]["hasConnectDescription"], topic_connectedness_iri) )
-            kwgrGraph.add( (obj_disease_topic_iri, _PREFIX["kwg-ont"]["hasConnectDescription"], topic_connectedness_iri) )
+            #kwgrGraph.add( (topic_connectedness_iri, _PREFIX["prov"]["hadPrimarySource"], _PREFIX["doid"][obj_iri]) )
+            #kwgrGraph.add( (topic_connectedness_iri, _PREFIX["eo"]["referencesConcept"], _PREFIX["doid"][obj_iri]) )
+            kwgrGraph.add( (subj_disease_topic_iri, _PREFIX["eo"]["referencesConcept"], _PREFIX["doid"][subj]) )
+            kwgrGraph.add( (obj_disease_topic_iri, _PREFIX["eo"]["referencesConcept"], _PREFIX["doid"][obj]) )
+            kwgrGraph.add( (subj_disease_topic_iri, _PREFIX["eo"]["hasConnectDescription"], topic_connectedness_iri) )
+            kwgrGraph.add( (obj_disease_topic_iri, _PREFIX["eo"]["hasConnectDescription"], topic_connectedness_iri) )
   return kwgrGraph
 
 _main()
