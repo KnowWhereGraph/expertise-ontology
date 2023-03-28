@@ -23,7 +23,7 @@ An ontology for modeling experts, their expertise topics and relations between t
 ## [Formalization](./expertise-ontology.ttl)
 
 ## Contributors
-Shirly Stephen, Mark Schildhauer, Kitty Currier
+Shirly Stephen, Mark Schildhauer, Kitty Currier, Ling Cai, Cogan Shimizu, Pascal Hitzler, Krzysztof Janowicz
 
 ## Usage
 The KnowWhereGraph Project
