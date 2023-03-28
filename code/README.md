@@ -1,13 +1,2 @@
-# Expertise Ontology
-An ontology for modeling experts, their expertise topics and relations between them, and their spatiotemporal scoping. 
-
-## Schema Diagram
-
-
-## [Formalization](./scientific-taxonomy-pattern.owl)
-
-##Contributors
-TBA
-
-## Usage
-TBA
+# code
+(./construct_topic_hierarchy.py) - python script that takes an OWL ontology (that contains a domain taxonomy) and constructs the corresponding topic hierarchy following the topic-hierarchy modeling schema.
