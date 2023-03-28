@@ -23,7 +23,9 @@ An ontology for modeling experts, their expertise topics and relations between t
 ## [Formalization](./expertise-ontology.ttl)
 
 ## Contributors
-Shirly Stephen, Mark Schildhauer, Kitty Currier, Ling Cai, Cogan Shimizu, Pascal Hitzler, Krzysztof Janowicz
+**Knowledge Modeling:** Shirly Stephen, Mark Schildhauer, Kitty Currier, Ling Cai, Cogan Shimizu, Pascal Hitzler, Krzysztof Janowicz
 
+**Domain experts:** Andrew Schroeder & Anna Lopez-Carr from [Direct Relief
+](https://www.directrelief.org/)
 ## Usage
 The KnowWhereGraph Project
