@@ -60,7 +60,7 @@
           <y:Geometry height="22.0" width="124.64000000000004" x="314.246" y="205.60590115929864"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="122.0546875" x="1.2926562499999932" xml:space="preserve" y="1.6494140625">EntityWithProvenance<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="122.0546875" x="1.29265625000005" xml:space="preserve" y="1.6494140625">EntityWithProvenance<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -271,7 +271,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
     <node id="n21">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="127.44324479999966" x="505.9447552000006" y="-115.26838655999873"/>
+          <y:Geometry height="30.0" width="127.44324479999966" x="510.35675520000063" y="-115.26838655999873"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.06640625" x="5.688419274999887" xml:space="preserve" y="5.6494140625">eo:SpecialityRelation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -296,7 +296,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
           <y:Geometry height="30.0" width="58.999999999999886" x="622.2270842077926" y="45.85452352000131"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="58.708984375" x="0.14550781249994316" xml:space="preserve" y="5.6494140625">foaf:Agent<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="58.708984375" x="0.1455078125" xml:space="preserve" y="5.6494140625">foaf:Agent<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -307,10 +307,10 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="81.52124759578885" width="95.37109374999994" x="478.107970261842" y="22.562426880001624"/>
+              <y:Geometry height="81.52124759578885" width="95.37109375" x="478.10797026184196" y="22.562426880001624"/>
               <y:Fill color="#F5F5F5" transparent="false"/>
               <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="95.37109374999994" x="0.0" y="0.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#EBEBEB" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="95.37109375" x="0.0" y="0.0"/>
               <y:Shape type="roundrectangle"/>
               <y:State closed="false" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
               <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
@@ -336,7 +336,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
               <y:Geometry height="22.0" width="64.43139840000015" x="493.57781793684194" y="41.562426880001624"/>
               <y:Fill color="#FFFF00" transparent="false"/>
               <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.37109375" x="-0.46984767499992586" xml:space="preserve" y="1.6494140625">foaf:Person<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.37109375" x="-0.4698476749999827" xml:space="preserve" y="1.6494140625">foaf:Person<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
               <y:Shape type="roundrectangle"/>
             </y:ShapeNode>
           </data>
@@ -357,10 +357,10 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
     <node id="n25">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="22.0" width="124.64000000000004" x="720.4800000000001" y="-142.26838655999873"/>
-          <y:Fill color="#CCFFFF" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="122.0546875" x="1.29265625000005" xml:space="preserve" y="1.6494140625">EntityWithProvenance<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Geometry height="30.0" width="82.40000000000003" x="434.7643007999999" y="150.73081344000036"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="55.36328125" x="13.518359375000045" xml:space="preserve" y="5.6494140625">eo:Expert<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -368,15 +368,15 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
     <node id="n26">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="82.40000000000003" x="434.7643007999999" y="150.73081344000036"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
-          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="55.36328125" x="13.518359374999989" xml:space="preserve" y="5.6494140625">eo:Expert<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Geometry height="22.0" width="124.64000000000004" x="549.092" y="-14.437573119998376"/>
+          <y:Fill color="#CCFFFF" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="dashed" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="122.0546875" x="1.29265625000005" xml:space="preserve" y="1.6494140625">EntityWithProvenance<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
     </node>
-    <edge id="e0" source="n26" target="n1">
+    <edge id="e0" source="n25" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-22.362245809405696" sy="0.0" tx="35.80000000000001" ty="0.0"/>
@@ -387,7 +387,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e1" source="n26" target="n2">
+    <edge id="e1" source="n25" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="14.990234375" tx="26.8435371171259" ty="-1.8714815999999246">
@@ -434,7 +434,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e5" source="n26" target="n7">
+    <edge id="e5" source="n25" target="n7">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="41.249999999999886" sy="0.0" tx="-49.534744262695504" ty="0.0"/>
@@ -527,7 +527,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e13" source="n26" target="n19">
+    <edge id="e13" source="n25" target="n19">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-18.497011627450256" sy="-14.979397583405415" tx="0.0" ty="14.990234375"/>
@@ -549,17 +549,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e15" source="n19" target="n3">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="-38.42290506921132" sy="4.865236390173891" tx="40.91116794385971" ty="-11.022623854035459"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_delta"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e16" source="n18" target="n1">
+    <edge id="e15" source="n18" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-14.696000000000026" sy="15.019186559999618" tx="23.655999999999892" ty="-3.4428134400003216"/>
@@ -570,7 +560,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e17" source="n7" target="n1">
+    <edge id="e16" source="n7" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="42.84529066666619" sy="-5.636813440000395" tx="-8.92799999999994" ty="-3.3068134400003544">
@@ -586,7 +576,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e18" source="n24" target="n23">
+    <edge id="e17" source="n24" target="n23">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="47.69148507458788" sy="-1.927576404871032" tx="0.0" ty="0.0"/>
@@ -596,7 +586,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e19" source="n8" target="n23">
+    <edge id="e18" source="n8" target="n23">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-22.9587093333339" sy="-0.8153676800005343" tx="29.50927734375" ty="0.0">
@@ -608,7 +598,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e20" source="n8" target="n21">
+    <edge id="e19" source="n8" target="n21">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -621,7 +611,7 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e21" source="n21" target="n10">
+    <edge id="e20" source="n21" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -629,30 +619,51 @@ in a Knowledge Graph<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="70.03515625" x="-101.01751180429653" xml:space="preserve" y="-9.350585656678447">eo:speciality<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.29041470048250423" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="70.03515625" x="-102.29020281048156" xml:space="preserve" y="-9.350585656678447">eo:speciality<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.29041470048250423" segment="0"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e22" source="n21" target="n25">
+    <edge id="e21" source="n24" target="n25">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="569.6663776000005" y="-131.26838655999873"/>
-          </y:Path>
+          <y:Path sx="-17.88274796753558" sy="4.253735287016383" tx="31.946468369306444" ty="-15.023162905069114"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="white_delta" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e22" source="n25" target="n18">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-41.22500000000002" sy="0.0" tx="27.121132605969592" ty="14.689967576530634"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="115.41015625" x="-119.50242267481417" xml:space="preserve" y="-82.29807848664403">eo:engagedInActivity<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/></y:LabelModel><y:ModelParameter><y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center" ratio="0.39465917986448834" segment="-1"/></y:ModelParameter><y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e23" source="n19" target="n26">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_delta"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e23" source="n24" target="n26">
+    <edge id="e24" source="n21" target="n26">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-17.88274796753558" sy="4.253735287016383" tx="31.946468369306444" ty="-15.023162905069114"/>
+          <y:Path sx="37.33362239999951" sy="1.668386559998737" tx="0.0" ty="-11.033203125"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="white_delta" target="none"/>
+          <y:Arrows source="none" target="white_delta"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
