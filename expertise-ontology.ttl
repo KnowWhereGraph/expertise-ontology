@@ -10,6 +10,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 
 foaf:Agent a owl:Class .
 foaf:name a owl:AnnotationProperty .
@@ -50,15 +51,15 @@ owl:versionInfo "v 1.0" .
 
 ###  http://knowwheregraph/ontology/expertise-ontology/activePeriod
 eo:activePeriod rdf:type owl:ObjectProperty ;
-                schema:domainIncludes <http://knowwheregraph/ontology/dmdo/Affiliation> ;
+                schema:domainIncludes eo:Affiliation ;
                 schema:rangeIncludes time:TemporalEntity ;
                 rdfs:label "active period" .
 
 
 ###  http://knowwheregraph/ontology/expertise-ontology/activity
 eo:activity rdf:type owl:ObjectProperty ;
-            schema:domainIncludes "'Activity Relation'" ;
-            schema:rangeIncludes "Activity" ;
+            schema:domainIncludes eo:ActivityRelation ;
+            schema:rangeIncludes eo:Activity ;
             rdfs:comment "Denotes the relation between reified ActivityRelation class and Activity." ;
             rdfs:label "activity" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between reified ActivityRelation class and Activity." .
@@ -66,26 +67,18 @@ eo:activity rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/activityOf
 eo:activityOf rdf:type owl:ObjectProperty ;
-              schema:domainIncludes "'Activity Relation'" ;
-              schema:rangeIncludes "Activity" ;
+              schema:domainIncludes eo:ActivityRelation ;
+              schema:rangeIncludes eo:Activity ;
               rdfs:comment "Denotes the relation between reified ActivityRelation class and Expert." ;
               rdfs:label "activity of" ;
               <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between reified ActivityRelation class and Expert." .
 
 
-###  http://knowwheregraph/ontology/expertise-ontology/affiliationLocation
-eo:affiliationLocation rdf:type owl:ObjectProperty ;
-                       schema:domainIncludes "Affiliation" ;
-                       schema:rangeIncludes "http://www.opengis.net/ont/geosparql#SpatialObject" ;
-                       rdfs:comment "Denotes the relation between an affiliation and a spatial location." ;
-                       rdfs:label "affiliation location" ;
-                       <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between an affiliation and a spatial location." .
-
 
 ###  http://knowwheregraph/ontology/expertise-ontology/affiliationOf
 eo:affiliationOf rdf:type owl:ObjectProperty ;
-                 schema:domainIncludes "Affiliation" ;
-                 schema:rangeIncludes "Expert" ;
+                 schema:domainIncludes eo:Affiliation ;
+                 schema:rangeIncludes eo:Expert ;
                  rdfs:comment "Denotes the relation between and Affiliation category and an Expert." ;
                  rdfs:label "affiliation of" ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between and Affiliation category and an Expert." ;
@@ -94,8 +87,8 @@ eo:affiliationOf rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/affiliationWith
 eo:affiliationWith rdf:type owl:ObjectProperty ;
-                   schema:domainIncludes "Affiliation" ;
-                   schema:rangeIncludes "Organization" ;
+                   schema:domainIncludes eo:Affiliation ;
+                   schema:rangeIncludes eo:Organization ;
                    rdfs:comment "Denotes the relation between and Affiliation category and an Organization." ;
                    rdfs:label "affiliation with" ;
                    <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between and Affiliation category and an Organization." .
@@ -103,8 +96,8 @@ eo:affiliationWith rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/expertiseOf
 eo:expertiseOf rdf:type owl:ObjectProperty ;
-               schema:domainIncludes "'Expertise Relation'" ;
-               schema:rangeIncludes "Expert" ;
+               schema:domainIncludes eo:ExpertiseRelation ;
+               schema:rangeIncludes eo:Expert ;
                rdfs:comment "Denotes the relation between reified ExpertiseRelation class and Expert." ;
                rdfs:label "expertise of" ;
                <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between reified ExpertiseRelation class and Expert." .
@@ -112,7 +105,7 @@ eo:expertiseOf rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/fallsUnderTopic
 eo:fallsUnderTopic rdf:type owl:ObjectProperty ;
-                   schema:rangeIncludes "Topic" ;
+                   schema:rangeIncludes eo:Topic ;
                    rdfs:comment "Relation to annotate instances in the graph, such as those pertaining to events, activities, organization specialities, affiliations, etc. with relevant topics." ;
                    rdfs:label "falls under topic" ;
                    <http://www.w3.org/2004/02/skos/core#definition> "Relation to annotate instances in the graph, such as those pertaining to events, activities, organization specialities, affiliations, etc. with relevant topics." .
@@ -120,8 +113,8 @@ eo:fallsUnderTopic rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/hasConnectDescription
 eo:hasConnectDescription rdf:type owl:ObjectProperty ;
-                         schema:domainIncludes "Topic" ;
-                         schema:rangeIncludes "'Topic Connectedness Description'" ;
+                         schema:domainIncludes eo:Topic ;
+                         schema:rangeIncludes eo:TopicConnectednessDescription ;
                          rdfs:comment "Relation between Topic and the reified TopicConnectednessDescription class." ;
                          rdfs:label "has connect description" ;
                          <http://www.w3.org/2004/02/skos/core#definition> "Relation between Topic and the reified TopicConnectednessDescription class." .
@@ -129,8 +122,8 @@ eo:hasConnectDescription rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/hasExpertise
 eo:hasExpertise rdf:type owl:ObjectProperty ;
-                schema:domainIncludes "Expert" ;
-                schema:rangeIncludes "Topic" ;
+                schema:domainIncludes eo:Expert ;
+                schema:rangeIncludes eo:Topic ;
                 rdfs:comment "Denotes the relation between an expert and their expertise topic." ;
                 rdfs:label "has expertise" ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between an expert and their expertise topic." .
@@ -138,7 +131,7 @@ eo:hasExpertise rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/hasGeographicLocation
 eo:hasGeographicLocation rdf:type owl:ObjectProperty ;
-                         schema:domainIncludes "Expert" ;
+                         schema:domainIncludes eo:Expert ;
                          schema:rangeIncludes "http://www.opengis.net/ont/geosparql#SpatialObject" ;
                          rdfs:comment "Denotes the relation between an expert and their spatial location." ;
                          rdfs:label "has geographic location" ;
@@ -148,26 +141,17 @@ eo:hasGeographicLocation rdf:type owl:ObjectProperty ;
 ###  http://knowwheregraph/ontology/expertise-ontology/hasRelatedTopic
 eo:hasRelatedTopic rdf:type owl:ObjectProperty ,
                             owl:SymmetricProperty ;
-                   schema:domainIncludes "Topic" ;
-                   schema:rangeIncludes "Topic" ;
+                   schema:domainIncludes eo:Topic ;
+                   schema:rangeIncludes eo:Topic ;
                    rdfs:comment "A symmetric relation that denotes when one topic is the related to another but not necessarily a narrower 'sub-topic' or broader 'super-topic' relation." ;
                    rdfs:label "has related topic" ;
                    <http://www.w3.org/2004/02/skos/core#definition> "A symmetric relation that denotes when one topic is the related to another but not necessarily a narrower 'sub-topic' or broader 'super-topic' relation." .
 
 
-###  http://knowwheregraph/ontology/expertise-ontology/hasSpatialAffiliation
-eo:hasSpatialAffiliation rdf:type owl:ObjectProperty ;
-                         schema:domainIncludes "Expert" ;
-                         schema:rangeIncludes <http://www.opengis.net/ont/geosparql#SpatialObject> ;
-                         rdfs:comment "Denotes the relation between an Expert and the spatial location of their affiliation." ;
-                         rdfs:label "has spatial affiliation" ;
-                         <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between an Expert and the spatial location of their affiliation." .
-
-
 ###  http://knowwheregraph/ontology/expertise-ontology/hasSpatialAssociation
 eo:hasSpatialAssociation rdf:type owl:ObjectProperty ;
-                         schema:domainIncludes "'Expertise Relation'" ,
-                                               "Topic" ;
+                         schema:domainIncludes eo:ExpertiseRelation ,
+                                               eo:Topic ;
                          schema:rangeIncludes "http://www.opengis.net/ont/geosparql#SpatialObject" ;
                          rdfs:comment "Denotes relation between a topic and the area of interest. Also denotes the relation between an expert's expertise with a topic having a specific spatial scope." ;
                          rdfs:label "has spatial association" ;
@@ -176,16 +160,23 @@ eo:hasSpatialAssociation rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/hasSpecialistsIn
 eo:hasSpecialistsIn rdf:type owl:ObjectProperty ;
-                    schema:domainIncludes "Organization" ;
-                    schema:rangeIncludes "Speciality" ;
+                    schema:domainIncludes org:Organization ;
+                    schema:rangeIncludes eo:Speciality ;
                     rdfs:comment "Denotes the relation between organization and a speciality area, based on its members most suited (by virtue of their natural aptitude, location, skill, or other qualification) specialized capabilities or responsibilities." ;
                     rdfs:label "has specialists in" ;
                     <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between organization and a speciality area, based on its members most suited (by virtue of their natural aptitude, location, skill, or other qualification) specialized capabilities or responsibilities." .
-
+				
+###  http://knowwheregraph/ontology/expertise-ontology/engagedInActivity
+eo:engagedInActivity rdf:type owl:ObjectProperty ;
+					schema:domainIncludes eo:Expert ;
+                    schema:rangeIncludes eo:Activity ;
+                    rdfs:comment "Denotes the relation between expert and an activity they may have engaged in." ;
+                    rdfs:label "engaged in activity" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between expert and an activity they may have engaged in." .
 
 ###  http://knowwheregraph/ontology/expertise-ontology/hasStudyAreaOfInterest
 eo:hasStudyAreaOfInterest rdf:type owl:ObjectProperty ;
-                          schema:domainIncludes "Expert" ;
+                          schema:domainIncludes eo:Expert ;
                           schema:rangeIncludes "http://www.opengis.net/ont/geosparql#SpatialObject" ;
                           rdfs:comment "Denotes the relation between an expert and the spatial location that is theur study area of interest." ;
                           rdfs:label "has study area of interest" ;
@@ -196,8 +187,8 @@ eo:hasStudyAreaOfInterest rdf:type owl:ObjectProperty ;
 eo:hasSubTopic rdf:type owl:ObjectProperty ;
                owl:inverseOf eo:isSubTopicOf ;
                rdf:type owl:TransitiveProperty ;
-               schema:domainIncludes "Topic" ;
-               schema:rangeIncludes "Topic" ;
+               schema:domainIncludes eo:Topic ;
+               schema:rangeIncludes eo:Topic ;
                rdfs:comment "A transitive relation that denotes that one topic is the parent of another." ;
                rdfs:label "has sub-topic" ;
                <http://www.w3.org/2004/02/skos/core#definition> "A transitive relation that denotes that one topic is the parent of another." .
@@ -206,8 +197,8 @@ eo:hasSubTopic rdf:type owl:ObjectProperty ;
 ###  http://knowwheregraph/ontology/expertise-ontology/isSubTopicOf
 eo:isSubTopicOf rdf:type owl:ObjectProperty ,
                          owl:TransitiveProperty ;
-                schema:domainIncludes "Topic" ;
-                schema:rangeIncludes "Topic" ;
+                schema:domainIncludes eo:Topic ;
+                schema:rangeIncludes eo:Topic ;
                 rdfs:comment "A transitive relation that denotes that one topic is the child of another." ;
                 rdfs:label "is sub-topic of" ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A transitive relation that denotes that one topic is the child of another." .
@@ -215,7 +206,7 @@ eo:isSubTopicOf rdf:type owl:ObjectProperty ,
 
 ###  http://knowwheregraph/ontology/expertise-ontology/locatedIn
 eo:locatedIn rdf:type owl:ObjectProperty ;
-             schema:domainIncludes "Organization" ;
+             schema:domainIncludes org:Organization ;
              schema:rangeIncludes <http://www.opengis.net/ont/geosparql#SpatialObject> ;
              rdfs:comment "Denotes the relation between Organization and the geographic region it is spatially located in." ;
              rdfs:label "located in" ;
@@ -224,13 +215,15 @@ eo:locatedIn rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/particularToTemporalPeriod
 eo:particularToTemporalPeriod rdf:type owl:ObjectProperty ;
-                              schema:domainIncludes eo:AgentExpertiseRelation ;
+                              schema:domainIncludes eo:ExpertiseRelation ;
                               schema:rangeIncludes time:TemporalEntity ;
                               rdfs:label "particular to temporal period" .
 
 
 ###  http://knowwheregraph/ontology/expertise-ontology/qualitativeExpertiseLevel
 eo:qualitativeExpertiseLevel rdf:type owl:ObjectProperty ;
+							schema:domainIncludes eo:ExpertiseRelation ;
+                             schema:rangeIncludes eo:ExpertiseLevel ;
                              rdfs:comment "Denotes a categorical assignment of expertise." ;
                              rdfs:label "qualitative expertise level" ;
                              <http://www.w3.org/2004/02/skos/core#definition> "Denotes a categorical assignment of expertise." ;
@@ -239,7 +232,7 @@ eo:qualitativeExpertiseLevel rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/referencesConcept
 eo:referencesConcept rdf:type owl:ObjectProperty ;
-                     schema:domainIncludes "Topic" ;
+                     schema:domainIncludes eo:Topic ;
                      rdfs:comment "Connects topics with related concepts/classes in external ontologies." ;
                      rdfs:label "references concept" ;
                      <http://www.w3.org/2004/02/skos/core#definition> "Connects topics with related concepts/classes in external ontologies." .
@@ -247,8 +240,8 @@ eo:referencesConcept rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/relatedToTopic
 eo:relatedToTopic rdf:type owl:ObjectProperty ;
-                  schema:domainIncludes "'Expertise Relation'" ;
-                  schema:rangeIncludes "Topic" ;
+                  schema:domainIncludes eo:ExpertiseRelation ;
+                  schema:rangeIncludes eo:Topic ;
                   rdfs:comment "Denotes the relation between reified ExpertiseRelation class and Topic." ;
                   rdfs:label "related to topic" ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between reified ExpertiseRelation class and Topic." .
@@ -256,8 +249,8 @@ eo:relatedToTopic rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/speciality
 eo:speciality rdf:type owl:ObjectProperty ;
-              schema:domainIncludes "'Speciality Relation'" ;
-              schema:rangeIncludes "Speciality" ;
+              schema:domainIncludes eo:SpecialityRelation ;
+              schema:rangeIncludes eo:Speciality ;
               rdfs:comment "Denotes the relation between reified SpecialityRelation class and Speciality." ;
               rdfs:label "speciality" ;
               <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between reified SpecialityRelation class and Speciality." .
@@ -265,8 +258,8 @@ eo:speciality rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/specialityOf
 eo:specialityOf rdf:type owl:ObjectProperty ;
-                schema:domainIncludes "'Speciality Relation'" ;
-                schema:rangeIncludes "Organization" ;
+                schema:domainIncludes eo:SpecialityRelation ;
+                schema:rangeIncludes eo:Organization ;
                 rdfs:comment "Denotes the relation between reified SpecialityRelation class and Organization." ;
                 rdfs:label "speciality of" ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Denotes the relation between reified SpecialityRelation class and Organization." .
@@ -291,9 +284,9 @@ eo:specialityOf rdf:type owl:ObjectProperty ;
 
 ###  http://knowwheregraph/ontology/expertise-ontology/quantitativeExpertiseLevel
 eo:quantitativeExpertiseLevel rdf:type owl:DatatypeProperty ;
-                              rdfs:comment "'Expertise Relation'" ,
-                                           "This relation is used to denote the numerical measure of an expert's degree of expertise on a topic" ,
-                                           "quantitative expertise level" .
+                              schema:domainIncludes eo:ExpertiseRelation ;
+                              rdfs:comment "This relation is used to denote the numerical measure of an expert's degree of expertise on a topic" ;
+                              rdfs:label "quantitative expertise level" .
 
 
 #################################################################
@@ -313,12 +306,12 @@ eo:Activity rdf:type owl:Class ;
 
 
 ###  http://knowwheregraph/ontology/expertise-ontology/AgentActivityRelation
-eo:AgentActivityRelation rdf:type owl:Class ;
+eo:ActivityRelation rdf:type owl:Class ;
                          rdfs:label "Activity Relation" .
 
 
 ###  http://knowwheregraph/ontology/expertise-ontology/AgentExpertiseRelation
-eo:AgentExpertiseRelation rdf:type owl:Class ;
+eo:ExpertiseRelation rdf:type owl:Class ;
                           rdfs:comment "Reification of the eo:hasExpertise relation." ;
                           rdfs:label "Expertise Relation" ;
                           <http://www.w3.org/2004/02/skos/core#definition> "Reification of the eo:hasExpertise relation." .
